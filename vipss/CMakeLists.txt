@@ -1,11 +1,11 @@
 project(vipss)
 cmake_minimum_required(VERSION 2.8)
-
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3 ")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
 
 find_package(nlopt REQUIRED)
 set(NLOPT_LIB_DIR "")
 set(NLOPT_LIB ${NLOPT_LIBRARIES})
+# set(CMAKE_BUILD_TYPE "Release")
 
 find_package(Armadillo REQUIRED)
 set(ARMADILLO_LIB_DIRS "")

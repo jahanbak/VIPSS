@@ -285,9 +285,9 @@ public:
     int ThreeStep(vector<double> &pts, vector<int> &labels, vector<double> &normals, vector<double> &tangents, vector<uint> &edges, RBF_Paras para);
     int AllStep(vector<double> &pts, vector<int> &labels, vector<double> &normals, vector<double> &tangents, vector<uint> &edges, RBF_Paras para);
 
-    int InjectData(vector<double> &pts, vector<int> &labels, vector<double> &normals, vector<double> &tangents, vector<uint> &edges, RBF_Paras para);
+    int InjectData(const vector<double> &pts, const vector<int> &labels, const vector<double> &normals, const vector<double> &tangents, const vector<uint> &edges, RBF_Paras para);
 
-    int InjectData(vector<double> &pts, RBF_Paras para);
+//    int InjectData(const vector<double> &pts, RBF_Paras para);
 
     void BuildK(RBF_Paras para);
 

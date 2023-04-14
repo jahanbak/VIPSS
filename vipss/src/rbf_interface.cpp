@@ -100,17 +100,18 @@ void RBF_Core::Surfacing(int method, int n_voxels_1d){
 }
 
 
-int RBF_Core::InjectData(vector<double> &pts, RBF_Paras para){
+//int RBF_Core::InjectData(const vector<double> &pts, RBF_Paras para){
+    
+//    vector<int> labels;
+//    vector<double> normals,tangents;
+//    vector<uint> edges;
 
-    vector<int> labels;
-    vector<double> normals,tangents;
-    vector<uint> edges;
+//  InjectData(pts,labels,normals,tangents,edges,para);
+//  InjectData(pts, vector<int>(), vector<double>(), vector<double>(), vector<uint>(), para);
 
-    InjectData(pts,labels,normals,tangents,edges,para);
+//}
 
-}
-
-int RBF_Core::InjectData(vector<double> &pts, vector<int> &labels, vector<double> &normals, vector<double> &tangents, vector<uint> &edges, RBF_Paras para){
+int RBF_Core::InjectData(const vector<double> &pts, const vector<int> &labels, const vector<double> &normals, const vector<double> &tangents, const vector<uint> &edges, RBF_Paras para){
 
     isuse_sparse = para.isusesparse;
     sparse_para = para.sparse_para;

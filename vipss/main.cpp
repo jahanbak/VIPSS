@@ -68,7 +68,8 @@ int main(int argc, char** argv)
     para.user_lamnbda = user_lambda;
 
     readXYZ(infilename,Vs);
-    rbf_core.InjectData(Vs,para);
+//    rbf_core.InjectData(Vs,para);
+    rbf_core.InjectData(Vs, vector<int>(), vector<double>(), vector<double>(), vector<uint>(), para);
     rbf_core.BuildK(para);
     rbf_core.InitNormal(para);
     rbf_core.OptNormal(0);
